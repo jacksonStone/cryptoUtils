@@ -60,8 +60,7 @@ function verifyBodyWithHMAC(encryptionBody) {
 	return hmac === newHMAC;
 }
 
-function decryptCookie(cookie, callback) {
-	const parts = text.split(':');
+function decryptCookie(cookie) {
 	const hasIntegrity = verifyBodyWithHMAC(cookie);
 	if (hasIntegrity) {
 		return decrypt(cookie);
