@@ -2,7 +2,7 @@ const uuidV4 = require('uuid/v4');
 const crypto = require('crypto');
 const HASHING_FUNCTION_NAME = 'sha256';
 const ENCRYPTION_FUNCTION_NAME = 'aes-128-cbc';
-const EXPIRATION = 60 * 60 * 24 * 7;
+const EXPIRATION = 1000 * 60 * 60 * 24 * 7;
 
 let HMAC_KEY;
 let ENCRYPTION_PASSWORD;
